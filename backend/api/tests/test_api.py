@@ -1,6 +1,9 @@
 import pytest
 from httpx import AsyncClient, ASGITransport
-from ..main import app
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from main import app
 
 @pytest.mark.asyncio
 async def test_health_check():
