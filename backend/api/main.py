@@ -2,7 +2,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPExcept
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc, func
-from database import AsyncSessionLocal, TestResult, TestStatus
+from .database import AsyncSessionLocal, TestResult, TestStatus
 from typing import List
 import asyncio
 import aio_pika
