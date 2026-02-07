@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+@theme {
+    --font-sans: "Outfit", "Inter", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    @apply bg-slate-950 text-slate-50 antialiased;
+}
+
+#root {
+    height: 100%;
+}
+
+/* Custom Scrollbar for Dark Mode */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
